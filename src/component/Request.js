@@ -1,4 +1,4 @@
-import React , { useState, useEffect } from 'react';
+import React , { useState } from 'react';
 import { Card, CardContent, TextField, FormControl, InputLabel, Select, MenuItem, Button } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './Request.css';
@@ -50,7 +50,7 @@ const Request = () => {
         } catch (error) {
             console.error('Error submitting form:', error);
         }
-      };
+    };
 
     return(
         <ThemeProvider theme={theme}>
