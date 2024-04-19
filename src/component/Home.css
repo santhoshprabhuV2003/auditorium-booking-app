@@ -1,0 +1,58 @@
+.MuiTableHead-root {
+    background-color: black;
+}
+
+.MuiTableHead-root .MuiTableCell-head {
+    color: white;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 20px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.container h2 {
+    margin-bottom: 10px;
+}
+
+.MuiTable-root {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+@media (max-width: 768px) {
+    .MuiTable-root .MuiTableHead-root {
+      display: none;
+    }
+
+    .MuiTableBody-root .MuiTableRow-root {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .MuiTableBody-root .MuiTableCell-root {
+        display: block;
+        width: 100%;
+    }
+
+    .MuiTableBody-root .MuiTableRow-root .MuiTableCell-root {
+        text-align: right;
+        position: relative;
+    }
+
+    .MuiTableBody-root .MuiTableCell-root::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        text-align: left;
+    }
+  }

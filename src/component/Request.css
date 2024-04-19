@@ -1,0 +1,10 @@
+.request-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.MuiCard-root {
+    box-shadow: none !important;
+}

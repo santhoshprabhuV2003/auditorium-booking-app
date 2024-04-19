@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    padding: 15px;
+    height: 10vh;
+    line-height: 10vh;
+    background-color: #800000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-name {
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 55%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-links li {
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: white;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .app-name {
+        font-size: 23px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+        left: 0;
+        top: 10%;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        background-color: white;
+        color: black;
+        z-index: 1;
+    }
+    ul li {
+        padding: 10px;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+    }
+    .mobile-menu-icon {
+        position: absolute;
+        display: block;
+        line-height: 30vh;
+        right: 20px;
+        z-index: 2;
+    }
+}
