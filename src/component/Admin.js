@@ -19,7 +19,7 @@ const Admin = () => {
         const getData = async () => {
             try {
                 const response = await axios.get(API_URL);
-                setRequests(response.data.requests.Items);
+                setRequests(response.data.requests);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -41,7 +41,7 @@ const Admin = () => {
     const handleUpdate = async (event, request) => {
         try {
             const response = await axios.put(API_URL, request);
-            if (response.data.Operation === 'UPDATE' && response.data.Message === 'SUCCESS') {
+            if (response.status == 200) {
                 alert(`Request ${request.requestId} status updated successfully!!`);
             } else {
                 alert("Error updating request status!!");

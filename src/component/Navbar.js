@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return(
         <nav className='navbar'>
-            <h3 className='app-name'>TCE Auditorium Request</h3>
+            <h3 className='app-name'>Auditorium Request</h3>
 
             <ul className={Mobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setMobile(false)}>
                 <Link to='/'><li>Home</li></Link>

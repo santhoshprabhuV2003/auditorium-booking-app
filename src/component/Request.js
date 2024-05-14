@@ -76,9 +76,9 @@ const Request = () => {
                             <FormControl variant="outlined" fullWidth required sx={textStyle}>
                                 <InputLabel>Auditorium</InputLabel>
                                 <Select label="Auditorium"  name="auditorium" value={formData.auditorium} onChange={handleChange}>
-                                    <MenuItem value="KM">KM</MenuItem>
-                                    <MenuItem value="KS">KS</MenuItem>
-                                    <MenuItem value="Open Auditorium">Open Auditorium</MenuItem>
+                                    <MenuItem value="Auditorium 1">Auditorium 1</MenuItem>
+                                    <MenuItem value="Auditorium 2">Auditorium 2</MenuItem>
+                                    <MenuItem value="Auditorium 3">Auditorium 3</MenuItem>
                                 </Select>
                             </FormControl>
                             <TextField type="date" variant="outlined" fullWidth required sx={textStyle} name="dateOfEvent" value={formData.dateOfEvent} onChange={handleChange}/>
