@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Auditorium Request Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Auditorium Request Application simplifies the process of booking auditoriums for college events. Faculty members can easily submit requests, specifying details like their name, department, event date, and required auditorium. Administrators can then efficiently manage these requests, approving, rejecting, or canceling them as needed. Built on modern technologies like React.js for the frontend and AWS Lambda functions, DynamoDB, API Gateway, IAM, and CloudWatch for the backend, the architecture ensures seamless performance and efficient management of auditorium requests.
 
-## Available Scripts
+![Auditorium-Request-Architecture-Diagram](https://github.com/santhoshprabhuV2003/auditorium-booking-app/assets/138225962/c147ee90-d2ea-4805-9e62-37b8158c5a5f)
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+To get started with the Auditorium Request Application, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js installed on your machine
+- AWS account with necessary permissions
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone or download the repository from GitHub.
 
-### `npm run build`
+    ```bash
+    git clone https://github.com/your-username/auditorium-request.git
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    cd auditorium-request
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies.
 
-### `npm run eject`
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## AWS Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Before deploying the application, you need to set up the required AWS services.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Lambda Functions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Create Lambda functions for handling request submission, approval, rejection, and cancellation.
 
-## Learn More
+### DynamoDB
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Create a DynamoDB table to store auditorium requests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### API Gateway
 
-### Code Splitting
+1. Set up an API Gateway to expose endpoints for the frontend to communicate with Lambda functions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Configure CORS settings to allow requests from the frontend domain.
 
-### Analyzing the Bundle Size
+### IAM Roles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Create IAM roles with appropriate permissions for Lambda functions to interact with other AWS services.
 
-### Making a Progressive Web App
+### CloudWatch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Set up CloudWatch alarms and logs for monitoring the application's performance and error handling.
 
-### Advanced Configuration
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Once the AWS setup is complete, you can deploy the frontend and start using the Auditorium Request Application. Ensure that the necessary permissions are granted to access the application from the frontend.
