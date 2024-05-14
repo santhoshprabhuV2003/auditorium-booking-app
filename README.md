@@ -24,7 +24,7 @@ To get started with the Auditorium Request Application, follow these steps:
 2. Navigate to the project directory.
 
     ```bash
-    cd auditorium-request
+    cd auditorium-booking-app
     ```
 
 3. Install dependencies.
@@ -62,3 +62,15 @@ Before deploying the application, you need to set up the required AWS services.
 ## Usage
 
 Once the AWS setup is complete, you can deploy the frontend and start using the Auditorium Request Application. Ensure that the necessary permissions are granted to access the application from the frontend.
+
+## Application Images
+
+![updated-requests](https://github.com/santhoshprabhuV2003/auditorium-booking-app/assets/138225962/7758e773-5883-44ad-8112-711802e82016)
+
+![new-auditorium-request](https://github.com/santhoshprabhuV2003/auditorium-booking-app/assets/138225962/b72eba55-a203-473a-bd24-84de83fcd9fb)
+
+![updating-request](https://github.com/santhoshprabhuV2003/auditorium-booking-app/assets/138225962/07725014-24e6-421a-bb72-26974e01dd42)
+
+![responsive-home-page](https://github.com/santhoshprabhuV2003/auditorium-booking-app/assets/138225962/7c7df32a-91a2-4f40-8293-11dc2532cafa)
+
+![responsive-new-request-page](https://github.com/santhoshprabhuV2003/auditorium-booking-app/assets/138225962/f3e9a32c-7088-4747-9325-4da65d6fd37b)
