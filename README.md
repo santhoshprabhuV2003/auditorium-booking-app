@@ -18,7 +18,7 @@ To get started with the Auditorium Request Application, follow these steps:
 1. Clone or download the repository from GitHub.
 
     ```bash
-    git clone https://github.com/your-username/auditorium-request.git
+    git clone  https://github.com/santhoshprabhuV2003/auditorium-booking-app
     ```
 
 2. Navigate to the project directory.
